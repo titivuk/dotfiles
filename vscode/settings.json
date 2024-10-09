@@ -193,6 +193,10 @@
     }
   ],
   "workbench.colorCustomizations": {
+    // side bar list/tree
+    "list.activeSelectionBackground": "#3B4252",
+    "list.inactiveSelectionBackground": "#2E3440",
+    "list.hoverBackground": "#2E3440",
     "foreground": "#BBC3D4",
     "descriptionForeground": "#BBC3D4",
     "editor.background": "#242933",
@@ -255,8 +259,8 @@
     "inputValidation.infoForeground": "#88C0D0",
     "inputValidation.infoBorder": "#88C0D0",
     "inputValidation.errorBackground": "#191D24",
-    "inputValidation.errorForeground": "#BF616A",
-    "inputValidation.errorBorder": "#BF616A",
+    "inputValidation.errorForeground": "#C5727A",
+    "inputValidation.errorBorder": "#C5727A",
     "inputValidation.warningBackground": "#191D24",
     "inputValidation.warningForeground": "#EFD49F",
     "inputValidation.warningBorder": "#EFD49F",

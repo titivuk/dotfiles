@@ -193,27 +193,76 @@
     }
   ],
   "workbench.colorCustomizations": {
-    "foreground": "#BBC3D4", // default foreground color which is used if not overriden by a component
+    "foreground": "#BBC3D4",
+    "descriptionForeground": "#BBC3D4",
     "editor.background": "#242933",
     "editor.selectionBackground": "#3B4252",
+    "widget.border": "#00000000",
+    "editorWidget.background": "#191D24",
+    "editorWidget.foreground": "#BBC3D4",
+    "editorWidget.resizeBorder": "#00000000",
     "editorLineNumber.foreground": "#4C566A",
-    "editorLineNumber.activeForeground": "#D8DEE9",
-    "selection.background": "#3B4252", // selection background for input fieds, text areas, etc
+    "editorLineNumber.activeForeground": "#BBC3D4",
+    "selection.background": "#3B4252",
     "focusBorder": "#00000000",
     "sideBar.background": "#242933",
+    "sideBar.foreground": "#BBC3D4",
     "sideBar.border": "#191D24",
+    "sideBarTitle.foreground": "#EBCB8B",
+    "sideBarSectionHeader.background": "#191D24",
+    "sideBarSectionHeader.foreground": "#BBC3D4",
+    "sideBarSectionHeader.border": "#00000000",
     "editorGroup.border": "#00000000",
     "editorGroupHeader.tabsBackground": "#191D24",
     "editorGroupHeader.tabsBorder": "#00000000",
     "tab.activeBackground": "#242933",
     "tab.inactiveBackground": "#1E222A",
+    "tab.activeBorderTop": "#191D24",
+    "tab.activeBorder": "#00000000",
+    "tab.activeForeground": "#BBC3D4",
+    "tab.inactiveForeground": "#BBC3D4",
+    "tab.hoverBackground": "#1E222A",
     "statusBar.background": "#191D24",
-    "activityBar.background": "#FF0000",
-    "menu.background": "#FFFF00", // menu when click on file, edit, etc
-    "panel.background": "#00FF00", // ???
-    "titleBar.activeBackground": "#191D24" // upper menu bar
+    "statusBarItem.remoteBackground": "#191D24",
+    "statusBarItem.remoteForeground": "#BBC3D4",
+    "statusBar.foreground": "#BBC3D4",
+    "activityBar.background": "#191D24",
+    "activityBar.foreground": "#BBC3D4",
+    "activityBar.border": "#00000000",
+    "activityBar.inactiveForeground": "#4C566A",
+    "activityBar.activeBorder": "#00000000",
+    "activityBarTop.background": "#191D24",
+    "activityBarTop.foreground": "#BBC3D4",
+    "activityBarTop.border": "#00000000",
+    "activityBarTop.inactiveForeground": "#4C566A",
+    "activityBarTop.activeBorder": "#00000000",
+    "scrollbar.shadow": "#191D24",
+    "scrollbarSlider.background": "#1E222A",
+    "scrollbarSlider.hoverBackground": "#191D24",
+    "menu.background": "#FFFF00",
+    "panel.background": "#242933",
+    "panel.border": "#191D24",
+    "panelTitle.activeForeground": "#BBC3D4",
+    "panelTitle.inactiveForeground": "#BBC3D4",
+    "panelTitle.activeBorder": "#D08770",
+    "panelInput.border": "#191D24",
+    "titleBar.activeBackground": "#191D24",
+    "input.background": "#242933",
+    "input.border": "#191D24",
+    "input.foreground": "#BBC3D4",
+    "input.placeholderForeground": "#BBC3D49F",
+    "inputValidation.infoBackground": "#191D24",
+    "inputValidation.infoForeground": "#88C0D0",
+    "inputValidation.infoBorder": "#88C0D0",
+    "inputValidation.errorBackground": "#191D24",
+    "inputValidation.errorForeground": "#BF616A",
+    "inputValidation.errorBorder": "#BF616A",
+    "inputValidation.warningBackground": "#191D24",
+    "inputValidation.warningForeground": "#EFD49F",
+    "inputValidation.warningBorder": "#EFD49F",
   },
   "editor.tokenColorCustomizations": {
+    // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming
     "textMateRules": [
       {
         "scope": "comment",
@@ -232,7 +281,7 @@
           "storage.modifier"
         ],
         "settings": {
-          "foreground": "#D08770"
+          "foreground": "#D08770",
         }
       },
       {
@@ -247,7 +296,7 @@
           "variable",
           // includes
           //  - entity.name.function.member
-          "entity.name.function"
+          "entity.name.function",
         ],
         "settings": {
           "foreground": "#8FBCBB"
@@ -285,12 +334,13 @@
           "entity.name.type",
           // includes builtin classes like Promise
           "support.class",
-          "support.type"
+          "support.type",
         ],
         "settings": {
-          "foreground": "#EBCB8B"
+          "foreground": "#EBCB8B",
         }
       }
     ]
-  }
+  },
+  "workbench.activityBar.location": "top"
 }

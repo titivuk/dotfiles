@@ -201,6 +201,20 @@
     "descriptionForeground": "#BBC3D4",
     "editor.background": "#242933",
     "editor.selectionBackground": "#3B4252",
+    "editor.lineHighlightBorder": "#00000000",
+    // highlight error in editor
+    "editorError.foreground": "#C5727A",
+    // link to declaration
+    "editorLink.activeForeground": "#5E81AC",
+    // vertical lines showing add, modify, delete changes
+    // located near line number
+    "editorGutter.modifiedBackground": "#5E81AC",
+    "editorGutter.addedBackground": "#A3BE8C",
+    "editorGutter.deletedBackground": "#BF616A",
+    // git colors for file names, etc
+    "gitDecoration.modifiedResourceForeground": "#EBCB8B",
+    "gitDecoration.deletedResourceForeground": "#BF616A",
+    "gitDecoration.untrackedResourceForeground": "#A3BE8C",
     "widget.border": "#00000000",
     "editorWidget.background": "#191D24",
     "editorWidget.foreground": "#BBC3D4",
@@ -264,6 +278,49 @@
     "inputValidation.warningBackground": "#191D24",
     "inputValidation.warningForeground": "#EFD49F",
     "inputValidation.warningBorder": "#EFD49F",
+    // buttons like open repository when new window is created
+    "button.background": "#1E222A",
+    "button.foreground": "#BBC3D4",
+    "button.hoverBackground": "#191D24",
+    // options like "Match case" and "Match whole word"
+    "inputOption.activeBackground": "#3B4252",
+    "inputOption.activeBorder": "#00000000",
+    // autocomplete widget, may be something else
+    "editorSuggestWidget.selectedBackground": "#3B4252",
+    "editorSuggestWidget.highlightForeground": "#88C0D0",
+    "editorSuggestWidget.focusHighlightForeground": "#88C0D0",
+    // "inlineChat.background": "#ff0000"
+    // editor window that shows references etc
+    "peekView.border": "#00000000",
+    "peekViewTitle.background": "#1E222A",
+    "peekViewTitleDescription.foreground": "#81A1C1",
+    "peekViewTitleLabel.foreground": "#BBC3D4",
+    "peekViewEditor.background": "#1E222A",
+    "peekViewEditor.matchHighlightBackground": "#3B4252",
+    "peekViewEditorGutter.background": "#1E222A",
+    // mini tree on the right side
+    "peekViewResult.selectionForeground": "#BBC3D4",
+    "peekViewResult.background": "#1E222A",
+    "peekViewResult.matchHighlightBackground": "#3B4252",
+    "peekViewResult.fileForeground": "#81A1C1",
+    "peekViewResult.lineForeground": "#BBC3D4",
+    // button in the middle top (yes its button)
+    // CTRL-P triggers window from that button
+    "commandCenter.background": "#191D24",
+    "commandCenter.foreground": "#00000000",
+    "commandCenter.border": "#00000000",
+    "commandCenter.activeBackground": "#191D24",
+    "commandCenter.activeForeground": "#00000000",
+    "commandCenter.activeBorder": "#00000000",
+    "commandCenter.debuggingBackground": "#00000000",
+    // menu triggered my CTRL-P
+    "pickerGroup.border": "#00000000",
+    "pickerGroup.foreground": "#BBC3D4",
+    "quickInput.background": "#1E222A",
+    "quickInput.foreground": "#BBC3D4",
+    "quickInputList.focusForeground": "#BBC3D4",
+    "quickInputList.focusBackground": "#3B4252",
+    "quickInputList.focusIconForeground": "#BBC3D4",
   },
   "editor.tokenColorCustomizations": {
     // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming

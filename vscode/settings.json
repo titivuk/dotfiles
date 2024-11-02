@@ -1,44 +1,30 @@
 {
   "files.autoSave": "afterDelay",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "typescript.updateImportsOnFileMove.enabled": "prompt",
-  "javascript.updateImportsOnFileMove.enabled": "prompt",
-  "editor.inlineSuggest.enabled": true,
-  "redhat.telemetry.enabled": false,
-  "go.toolsManagement.autoUpdate": true,
-  "editor.minimap.enabled": false,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
   "editor.lineNumbers": "relative",
+  "terminal.external.linuxExec": "bash",
+  "editor.minimap.enabled": false,
+  // "editor.fontFamily": "Nerd Font Mono",
+  // "editor.fontFamily": "'Fira Code', 'Consolas', 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "window.zoomLevel": 0.3,
   "workbench.activityBar.location": "top",
   "extensions.autoUpdate": false,
-  "window.zoomLevel": 0.3,
-  "window.commandCenter": false,
+  "workbench.colorTheme": "vscode-quosty-theme",
   "workbench.layoutControl.enabled": false,
-  "window.menuBarVisibility": "compact",
-  // "workbench.colorTheme": "vscode-quosty-theme",
-  // VIM configuration
-  "vim.leader": "<Space>",
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "vim.normalModeKeyBindingsNonRecursive": [
     // navigation
     // switch b/w buffers
@@ -114,78 +100,46 @@
         "workbench.action.focusRightGroup"
       ]
     },
+    // on hover tooltip
     {
       "before": [
         "leader",
-        "w"
+        "h"
       ],
       "commands": [
-        ":w!"
+        "editor.action.showHover"
       ]
     },
     {
       "before": [
         "leader",
-        "q"
+        "g",
+        "d"
       ],
       "commands": [
-        ":q!"
+        "editor.action.revealDefinition"
       ]
     },
     {
       "before": [
         "leader",
-        "x"
+        "g",
+        "i"
       ],
       "commands": [
-        ":x!"
+        "editor.action.goToImplementation"
       ]
-    }
+    },
+    {
+      "before": [
+        "leader",
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
+    },
   ],
-  "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
-    {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
-    },
-    {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
-    },
-    // Move selected lines while staying in visual mode
-    {
-      "before": [
-        "J"
-      ],
-      "commands": [
-        "editor.action.moveLinesDownAction"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "editor.action.moveLinesUpAction"
-      ]
-    },
-    // toggle comment selection
-    {
-      "before": [
-        "leader",
-        "c"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
-    }
-  ]
+  "window.menuBarVisibility": "compact",
 }

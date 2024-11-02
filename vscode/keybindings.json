@@ -2,12 +2,12 @@
 [
   // NAVIGATION
   {
-    "key": "ctrl+shift+a",
+    "key": "ctrl+shift+l",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+b",
+    "key": "ctrl+shift+h",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
@@ -25,13 +25,69 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
-  // FILE TREE
+  // Find 
   {
     "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
+    "key": "ctrl+f",
+    "when": "sideBarFocus && activeViewlet == 'workbench.view.search'"
   },
   {
-    "command": "workbench.files.action.focusFilesExplorer",
+    "command": "workbench.view.search",
+    "key": "ctrl+f",
+    "when": "sideBarFocus && activeViewlet != 'workbench.view.search'"
+  },
+  {
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.view.search"
+      ]
+    },
+    "key": "ctrl+f",
+    "when": "editorTextFocus"
+  },
+  // Source Control
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+g",
+    "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+  },
+  {
+    "command": "workbench.view.scm",
+    "key": "ctrl+g",
+    "when": "sideBarFocus && activeViewlet != 'workbench.view.scm'"
+  },
+  {
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.view.scm"
+      ]
+    },
+    "key": "ctrl+g",
+    "when": "editorTextFocus"
+  },
+  // File Tree 
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e",
+    "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+  },
+  {
+    "command": "workbench.view.explorer",
+    "key": "ctrl+e",
+    "when": "sideBarFocus && activeViewlet != 'workbench.view.explorer'"
+  },
+  {
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.view.explorer"
+      ]
+    },
     "key": "ctrl+e",
     "when": "editorTextFocus"
   },
@@ -55,7 +111,10 @@
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
   },
-
+  {
+    "command": "workbench.action.quickOpen",
+    "key": "ctrl+p"
+  },
   // EXTRA
   {
     "key": "ctrl+shift+5",

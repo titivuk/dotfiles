@@ -1,0 +1,88 @@
+<keymap version="1" name="Quosty" parent="Visual Studio">
+  <action id="ActivateAIAssistantToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl close_bracket" />
+  </action>
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl open_bracket" />
+  </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl t" />
+  </action>
+  <action id="CodeCleanup" />
+  <action id="Console.TableResult.DeleteRows">
+    <keyboard-shortcut first-keystroke="shift ctrl l" />
+  </action>
+  <action id="Console.TableResult.FindInGrid">
+    <keyboard-shortcut first-keystroke="alt f3" />
+  </action>
+  <action id="EditorChooseLookupItemDot" />
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="shift ctrl l" />
+  </action>
+  <action id="EditorMatchBrace" />
+  <action id="EditorToggleUseSoftWraps" />
+  <action id="FileChooser.TogglePathBar" />
+  <action id="Find">
+    <keyboard-shortcut first-keystroke="alt f3" />
+  </action>
+  <action id="FindSelectionInPath" />
+  <action id="FocusEditor">
+    <keyboard-shortcut first-keystroke="ctrl e" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="ctrl f" />
+  </action>
+  <action id="InsertLiveTemplate">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="x" />
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl x" />
+  </action>
+  <action id="Markdown.Preview.Find">
+    <keyboard-shortcut first-keystroke="alt f3" />
+  </action>
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
+  <action id="NextTab">
+    <keyboard-shortcut first-keystroke="ctrl period" />
+  </action>
+  <action id="PrevSplitter">
+    <keyboard-shortcut first-keystroke="ctrl h" />
+  </action>
+  <action id="PreviousTab">
+    <keyboard-shortcut first-keystroke="ctrl comma" />
+  </action>
+  <action id="Print" />
+  <action id="ProblemsView.QuickFixes">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="shift alt f10" />
+  </action>
+  <action id="RecentFiles" />
+  <action id="RecentFilesFallback" />
+  <action id="Replace" />
+  <action id="RunAnything">
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="SearchEverywhere" />
+  <action id="SetShortcutAction">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="shift alt f10" />
+  </action>
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="shift alt f10" />
+  </action>
+  <action id="SilentCodeCleanup" />
+  <action id="SpeedSearch">
+    <keyboard-shortcut first-keystroke="alt f3" />
+  </action>
+  <action id="SurroundWithLiveTemplate">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="s" />
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl s" />
+  </action>
+  <action id="SwitcherIterateItems" />
+  <action id="SwitcherRecentEditedChangedToggleCheckBox" />
+  <action id="TypeHierarchy" />
+  <action id="TypeHierarchyBase.BaseOnThisType" />
+  <action id="Unscramble" />
+  <action id="Vcs.ShowMessageHistory" />
+</keymap>

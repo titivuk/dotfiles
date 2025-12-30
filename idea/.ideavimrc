@@ -13,7 +13,6 @@ set relativenumber
 set ideajoin
 set ideamarks
 set idearefactormode=all
-set mapleader=
 set surround
 set commentary
 set multiple-cursors
@@ -22,6 +21,8 @@ set handler=both
 set incsearch
 map Q gq
 
+let mapleader=" "
+
 " Highlight copied text
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
@@ -29,12 +30,17 @@ Plug 'tpope/vim-commentary'
 
 map gd <Action>(GotoDeclaration)
 map gt <Action>(GotoTypeDeclaration)
+map gi <Action>(GotoImplementation)
+map gu <Action>(ShowUsages)
 
 map <leader>h <Action>(QuickJavaDoc)
+map <leader>he <Action>(ShowErrorDescription)
 
 map <leader>ca <Action>(ShowIntentionActions)
 
 map [d <Action>(GotoPreviousError)
 map ]d <Action>(GotoNextError)
+
+map gb <Action>(Back)
 
 map fmt <Action>(ReformatCode)

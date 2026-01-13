@@ -33,14 +33,20 @@ map gt <Action>(GotoTypeDeclaration)
 map gi <Action>(GotoImplementation)
 map gu <Action>(ShowUsages)
 
+" show description of the element under cursor 
 map <leader>h <Action>(QuickJavaDoc)
+" show description of the error under cursor
 map <leader>he <Action>(ShowErrorDescription)
 
+" open actions popup (import, etc) 
 map <leader>ca <Action>(ShowIntentionActions)
 
+" move between errors inside a file
 map [d <Action>(GotoPreviousError)
 map ]d <Action>(GotoNextError)
 
+" move back and forth
+map gf <Action>(Forward)
 map gb <Action>(Back)
 
 map fmt <Action>(ReformatCode)
